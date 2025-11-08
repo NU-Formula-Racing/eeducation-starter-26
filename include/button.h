@@ -30,7 +30,7 @@ void button_init(button_t* btn, pin_t pin);
  * @param cb  Callback function pointer.
  * @param ctx User-provided context pointer.
  */
-void button_set_callback(button_t* btn, void (*cb)(void* ctx), void* ctx);
+void button_set_callback(button_t* btn, void (*cb)(button_t* ctx), void* ctx);
 
 
 /**
